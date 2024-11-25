@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="jquery-3.5.1.js"></script>
+    <script src="script.js"></script>
+</head>
+<style>
+body {
+    user-select : none;
+}
+</style>
+<body>
+    <p> <input type = "text" id="out"></p>
+    <button id="bexp" onclick="back()">&larr;</button>
+    <button id="bclean" onclick="clean()">CE</button>
+    <button id="bclean1" onclick="clean()">C</button>
+    <button id="bplusminus" onclick="input('±')">&plusmn;</button>
+    <button id="bsquareroot" onclick="input('√')">&radic;</button>
+    <br>
+    <br>
+    <button id="n7" onclick="input('7')">7</button>
+    <button id="n8" onclick="input('8')">8</button>
+    <button id="n9" onclick="input('9')">9</button>
+    <button id="bslash" onclick="input('/')">/</button>
+    <button id="bpercent" onclick="input('%')">%</button>
+    <br>
+    <br>
+    <button id="n4" onclick="input('4')">4</button>
+    <button id="n5" onclick="input('5')">5</button>
+    <button id="n6" onclick="input('6')">6</button>
+    <button id="bmultiply" onclick="input('*')" onclick = "multiply()">*</button>
+    <button id="oneslashx" onclick="input('1/x')">1/x</button>
+    <br>
+    <br>
+    <button id="n1" onclick="input('1')">1</button>
+    <button id="n2" onclick="input('2')">2</button>
+    <button id="n3" onclick="input('3')">3</button>
+    <button id="bminus" onclick="input('-')" onclick = "minus()">-</button>
+    <br>
+    <br>
+    <button id="n0" onclick="input('0')">0</button>
+    <button id="bcomma" onclick="input(',')">,</button>
+    <button id="bplus" onclick="input('+')" onclick = "plus()">+</button>
+    <button id="bequally" onclick="equal()">=</button>
+</body>
+</html>
